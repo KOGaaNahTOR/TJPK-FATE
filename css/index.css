@@ -8,14 +8,60 @@
         font-family: "Sofia Sans Condensed";
         font-style: normal;
     }
+    body>h1{
+        height: 100px;
+    }
     .material-symbols-outlined{
-        width: 100px;
+        width: 200px;
         height: 100px;
         text-align: center;
         border-style: none;
         background: none;
+        font-size: 500%;
+        font-weight: 1000;
+        margin: 0%;
+        padding: 0%;
     }
     .material-symbols-outlined:focus{
         border-style: none;
         background: none;
+    }
+    .SpecialEffectBlock{
+        border-radius: 1000%;
+        display: none;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        margin: 0%;
+        padding: 0%;
+        position:fixed;
+        top: 150px;
+    }
+    .SpecialEffectActivation{
+        border-radius: 1000%;
+        display: block;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        animation: SpecialEffect 1s;
+        top: 150px;
+        position:fixed;
+    }
+
+    @keyframes SpecialEffect {
+        0%{
+            background-color: #aaFFEE;
+            opacity: 0%;
+            transform: scale(100%);
+        }
+        75%{
+            background-color: #aaFFEE;
+            opacity: 100%;
+            transform: scale(150%);
+        }
+        100%{
+            background-color: #aaFFEE;
+            opacity: 0%;
+            transform: scale(200%);
+        }
     }

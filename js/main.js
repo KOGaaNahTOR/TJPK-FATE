@@ -1,4 +1,7 @@
 
 function ButtonPress() {
-    console.log("ButtonPressed")
+    setTimeout(function(){
+        let doc = document.getElementsByTagName("body")[0]
+        doc.innerHTML += "<h2>ВЫ СТАЛИ ДВОРНИКОМ</h2>"
+    },5000)
 }

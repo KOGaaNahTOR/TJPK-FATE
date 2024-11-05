@@ -7,10 +7,16 @@ function ButtonPress() {
         let doc = document.getElementsByTagName("body")[0]
         let Info = document.createElement("h1")
         doc.appendChild(Info)
-        TimeoutTypeoutHandler(Info,"Вы стали дворником!",100)
-    },1000)
+        if (Math.random()>0.5){
+            TimeoutTypeoutHandler(Info,"Вы стали дворником!",100)
+        }else{
+            TimeoutTypeoutHandler(Info,"Вы стали миллионером!",100)
+        }
+    },2000)
     shot = false
     document.getElementsByClassName("SpecialEffectBlock")[0].className = "SpecialEffectActivation"
+    document.getElementsByClassName("SpecialEffectBlock")[0].className = "SpecialEffectActivationTwo"
+    document.getElementsByClassName("SpecialEffectBlock")[0].className = "SpecialEffectActivationThree"
 }
 
 function TimeoutTypeoutHandler(obj,text,delay){

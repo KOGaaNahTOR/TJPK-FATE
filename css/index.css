@@ -10,6 +10,7 @@
     }
     body>h1{
         height: 100px;
+        text-align: center;
     }
     .material-symbols-outlined{
         width: 200px;
@@ -39,28 +40,56 @@
     }
     .SpecialEffectActivation{
         border-radius: 1000%;
+        border-style: solid;
+        border-color: #00849a;
+        opacity: 0%;
         display: block;
         width: 100px;
         height: 100px;
         z-index: 2;
-        animation: SpecialEffect 1s;
+        animation: SpecialEffect 1s ease-out;
+        top: 150px;
+        position:fixed;
+    }
+    .SpecialEffectActivationTwo{
+        border-radius: 1000%;
+        border-style: solid;
+        border-color: #ffed00;
+        opacity: 0%;
+        display: block;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        animation: SpecialEffect 1s ease-out;
+        animation-delay: 0.5s;
+        top: 150px;
+        position:fixed;
+    }
+    .SpecialEffectActivationThree{
+        border-radius: 1000%;
+        border-style: solid;
+        border-color: #00849a;
+        opacity: 0%;
+        display: block;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        animation: SpecialEffect 1s ease-out;
+        animation-delay: 1.0s;
         top: 150px;
         position:fixed;
     }
 
     @keyframes SpecialEffect {
         0%{
-            background-color: #aaFFEE;
             opacity: 0%;
             transform: scale(100%);
         }
-        75%{
-            background-color: #aaFFEE;
+        85%{
             opacity: 100%;
             transform: scale(150%);
         }
         100%{
-            background-color: #aaFFEE;
             opacity: 0%;
             transform: scale(200%);
         }

@@ -7,6 +7,7 @@
         flex-direction: column;
         font-family: "Sofia Sans Condensed";
         font-style: normal;
+        user-select: none;
     }
     body>h1{
         height: 100px;
@@ -24,6 +25,10 @@
         padding: 0%;
     }
     .material-symbols-outlined:focus{
+        border-style: none;
+        background: none;
+    }
+    .material-symbols-outlined::selection{
         border-style: none;
         background: none;
     }

@@ -8,9 +8,9 @@ function ButtonPress() {
         let Info = document.createElement("h1")
         doc.appendChild(Info)
         if (Math.random()>0.5){
-            TimeoutTypeoutHandler(Info,"Вы стали дворником!",100)
+            TimeoutTypeoutHandler(Info,"Вы станете дворником!",50)
         }else{
-            TimeoutTypeoutHandler(Info,"Вы стали миллионером!",100)
+            TimeoutTypeoutHandler(Info,"Вы станете миллионером!",50)
         }
     },2000)
     shot = false

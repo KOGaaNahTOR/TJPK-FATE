@@ -48,6 +48,7 @@
         
     }
     .SpecialEffectActivation{
+        border-width: 1cm;
         border-radius: 1000%;
         border-style: solid;
         border-color: #00849a;
@@ -57,10 +58,11 @@
         height: 100px;
         z-index: -2;
         animation: SpecialEffect 1s ease-out;
-        top: 250px;
+        top: 215px;
         position:fixed;
     }
     .SpecialEffectActivationTwo{
+        border-width: 1cm;
         border-radius: 1000%;
         border-style: solid;
         border-color: #ffed00;
@@ -71,10 +73,11 @@
         z-index: -2;
         animation: SpecialEffect 1s ease-out;
         animation-delay: 0.5s;
-        top: 250px;
+        top: 215px;
         position:fixed;
     }
     .SpecialEffectActivationThree{
+        border-width: 1cm;
         border-radius: 1000%;
         border-style: solid;
         border-color: #00849a;
@@ -85,7 +88,7 @@
         z-index: -2;
         animation: SpecialEffect 1s ease-out;
         animation-delay: 1.0s;
-        top: 250px;
+        top: 215px;
         position:fixed;
     }
     #Shakey{

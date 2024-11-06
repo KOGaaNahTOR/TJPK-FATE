@@ -45,7 +45,7 @@ function ButtonUnpress() {
         Shakey.innerText = "ВЫ УБРАЛИ ПАЛЕЦ, СКАНИРОВАНИЕ ПРЕРВАНО"
         Shakey.id = "Shakey"
         doc.appendChild(Shakey)
-        document.activeElement.blur()
+        document.activeElement = doc
         setTimeout(function(){
             let thing = document.getElementById("Shakey")
             thing.parentElement.removeChild(thing)

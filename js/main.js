@@ -2,7 +2,7 @@ var shot = true
 var PredictionTimer
 document.addEventListener('contextmenu', event => event.preventDefault());
 document.getElementsByTagName("input")[0].addEventListener('touchend', (e) => {
-    ButtonUnpress
+    ButtonUnpress()
 }, false);
 
 

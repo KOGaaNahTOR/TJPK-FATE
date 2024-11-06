@@ -14,8 +14,8 @@
         text-align: center;
     }
     .material-symbols-outlined{
-        width: 200px;
-        height: 100px;
+        width: 100px;
+        height: 200px;
         text-align: center;
         border-style: none;
         background: none;
@@ -37,11 +37,12 @@
         display: none;
         width: 100px;
         height: 100px;
-        z-index: 2;
+        z-index: -2;
         margin: 0%;
         padding: 0%;
         position:fixed;
-        top: 150px;
+        top: 250px;
+        
     }
     .SpecialEffectActivation{
         border-radius: 1000%;
@@ -51,9 +52,9 @@
         display: block;
         width: 100px;
         height: 100px;
-        z-index: 2;
+        z-index: -2;
         animation: SpecialEffect 1s ease-out;
-        top: 150px;
+        top: 200px;
         position:fixed;
     }
     .SpecialEffectActivationTwo{
@@ -64,10 +65,10 @@
         display: block;
         width: 100px;
         height: 100px;
-        z-index: 2;
+        z-index: -2;
         animation: SpecialEffect 1s ease-out;
         animation-delay: 0.5s;
-        top: 150px;
+        top: 200px;
         position:fixed;
     }
     .SpecialEffectActivationThree{
@@ -78,11 +79,18 @@
         display: block;
         width: 100px;
         height: 100px;
-        z-index: 2;
+        z-index: -2;
         animation: SpecialEffect 1s ease-out;
         animation-delay: 1.0s;
-        top: 150px;
+        top: 200px;
         position:fixed;
+    }
+    #Shakey{
+        animation-name: Bounce;
+        animation-duration: 0.25s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        color: red;
     }
 
     @keyframes SpecialEffect {
@@ -97,5 +105,22 @@
         100%{
             opacity: 0%;
             transform: scale(200%);
+        }
+    }
+    @keyframes Bounce {
+        0%{
+            transform: translateX(0cm);
+        }
+        25%{
+            transform: translateX(0.2cm);
+        }
+        50%{
+            transform: translateX(0cm);
+        }
+        75%{
+            transform: translateX(-0.2cm);
+        }
+        100%{
+            transform: translateX(0cm);
         }
     }

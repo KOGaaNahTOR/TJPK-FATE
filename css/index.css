@@ -9,8 +9,11 @@
         font-style: normal;
         user-select: none;
     }
-    body>h1{
-        height: 200px;
+    body>h1[a="b"]{
+        height: 150px;
+        text-align: center;
+    }
+    body>h2{
         text-align: center;
     }
     .material-symbols-outlined{
@@ -54,7 +57,7 @@
         height: 100px;
         z-index: -2;
         animation: SpecialEffect 1s ease-out;
-        top: 300px;
+        top: 250px;
         position:fixed;
     }
     .SpecialEffectActivationTwo{
@@ -68,7 +71,7 @@
         z-index: -2;
         animation: SpecialEffect 1s ease-out;
         animation-delay: 0.5s;
-        top: 300px;
+        top: 250px;
         position:fixed;
     }
     .SpecialEffectActivationThree{
@@ -82,7 +85,7 @@
         z-index: -2;
         animation: SpecialEffect 1s ease-out;
         animation-delay: 1.0s;
-        top: 300px;
+        top: 250px;
         position:fixed;
     }
     #Shakey{

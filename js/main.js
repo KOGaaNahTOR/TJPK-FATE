@@ -10,18 +10,23 @@ function ButtonPress() {
     if (shot == false){return}
     PredictionTimer = setTimeout(function(){
         let doc = document.getElementsByTagName("body")[0]
-        let Info = document.createElement("h1")
-        Info.id = "Pediction"
+        let Main = document.createElement("h1")
+        Main.id = "Pediction"
+        doc.appendChild(Main)
+        let Info = document.createElement("h2")
+        Info.id = "Description"
         doc.appendChild(Info)
         if (Math.random()>0.5){
-            TimeoutTypeoutHandler(Info,"Вы станете дворником!",50)
+            TimeoutTypeoutHandler(Main,"ПО",1000)
+            TimeoutTypeoutHandler(Info,"ПО - программное обеспечение</br>это специальность для настоящих программистов, направленная на разработку программного обеспечения любого рода:</br> игры, программы, сайты, даже опирационные системы, всё это вы сможете создать по окончанию данного курса", 25)
         }else{
-            TimeoutTypeoutHandler(Info,"Вы станете миллионером!",50)
+            TimeoutTypeoutHandler(Main,"ВТИС",1000)
+            TimeoutTypeoutHandler(Info,"ВТИС, так-же известные как системные администраторы</br>это специальность ориентированная на человека техники и непосредственное взаимодействие с техникой</br>система умный дом становится так-же элементарна в освоении как конструктор лего", 25)
         }
     },2000)
     shot = false
     let doc = document.getElementsByTagName("body")[0]
-    let Please = document.createElement("h1")
+    let Please = document.createElement("h2")
     Please.id = "Please"
     Please.innerHTML = "</br>Не убирайте палец!"
     doc.appendChild(Please)
@@ -55,6 +60,11 @@ function ButtonUnpress() {
 }
 
 function TimeoutTypeoutHandler(obj,text,delay){
+    if (text[0] == "<" && text[1] == "/" && text[2] == "b" && text[3] == "r" && text[4] == ">"){
+        obj.innerHTML += text[0]+text[1]+text[2]+text[3]+text[4]
+        setTimeout(TimeoutTypeoutHandler,delay,obj,text.substr(5),delay)
+        return;
+    }
     obj.innerHTML += text[0]
     if (text.substr(1) != ""){
         setTimeout(TimeoutTypeoutHandler,delay,obj,text.substr(1),delay)

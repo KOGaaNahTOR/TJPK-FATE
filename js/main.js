@@ -45,11 +45,11 @@ function ButtonUnpress() {
         Shakey.innerText = "ВЫ УБРАЛИ ПАЛЕЦ, СКАНИРОВАНИЕ ПРЕРВАНО"
         Shakey.id = "Shakey"
         doc.appendChild(Shakey)
-        document.activeElement = doc
+        document.activeElement.blur()
         setTimeout(function(){
             let thing = document.getElementById("Shakey")
             thing.parentElement.removeChild(thing)
-        },1500)
+        },3000)
         // doc.removeChild()
     }
 }
